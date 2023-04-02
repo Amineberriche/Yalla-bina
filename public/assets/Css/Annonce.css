@@ -1,0 +1,62 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+
+.annonce{
+    background-color: #F2F4F4;
+    border-radius: 4px;
+    position: relative;
+    text-align: center;
+    width: 47%;
+    margin: 8%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.13);
+    left: 25%;
+    bottom: 10%;
+    
+  
+    
+}
+.info{
+    background-color:#60c9eb ;
+    position: relative;
+    height: 60px;
+    margin-bottom: 6%;
+    
+}
+
+.annonce .info li {
+    display: inline-block;
+    font-size: 15px;
+    padding: 15px;
+    color: white;
+    position: relative;
+    right: 5%;
+
+}
+.infouser{
+    margin: -5%;
+}
+.annonce .infouser li{
+    display: inline-flex;
+    position: relative;
+    font-size: 15px;
+    color: #60c9eb;
+    
+}
+.annonce .infouser li h5{
+    position: relative;
+    right: 305%;
+}
+.annonce .infouser li input{
+    color: white;
+    background-color: #60c9eb;
+    border: none;
+    position: relative;
+    left: 340%;
+    top: 10px;
+}
+

@@ -1,0 +1,312 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+
+<div id="header">
+		    <div class="flexslider" style="background-image: url('assets/images/roadd.jpg')">
+		        <ul class="slides">
+		            <li class="slider-item" style="background-image: ')">
+		                <div class="intro container">
+		                    <div class="inner-intro">
+		                        <h1 class="header-title">
+		                            <span>ANNONCEZ </span> OU TROUVEZ UN COVOITURAGE
+		                        </h1>
+		                    </div>
+		                </div>
+		            </li> <!-- /.slider-item -->
+		            <li class="slider-item" >
+		                <div class="intro">
+		                    <div class="inner-intro">
+		                        <h1 class="header-title">
+		                            Covoiturage  <span>libre</span> sans <span>commission </span>et <span>coopératif</span>
+		                        </h1>
+		                    </div>
+		                </div>
+		            </li> <!-- /.slider-item -->
+		        </ul> <!-- /.slides -->
+		    </div> <!-- /.flexslider -->
+		</div> <!-- /#header -->
+<!-- Find a Tour -->
+	<section class="tour section-wrapper container">
+		<h2 class="section-title">
+			Rechercher un Trajet 
+		</h2>
+		<p class="section-subtitle">
+			Ou voulez vous partir ?
+		</p>
+		<form method = "POST" action = "search">
+		<div class="row">
+			
+			<div class="col-md-3 col-sm-6">
+				<div class="input-group">
+					<input type="text" class="form-control border-radius border-right" placeholder="Lieu de Depart"/>
+					<span class="input-group-addon border-radius custom-addon" style ="height: auto;">
+						<i class="ion-android-compass"></i>
+					</span>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-6">
+				<div class="input-group">
+					<input type="text" class="form-control border-radius border-right" placeholder="Lieu de Destination"/>
+					<span class="input-group-addon border-radius custom-addon"  style ="height: auto;">
+						<i class="ion-android-map"></i>
+					</span>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-6">
+				<div class="input-group">
+					<input type="date" class="form-control border-radius border-right" placeholder="Departure"/>
+					<span class="input-group-addon border-radius custom-addon"  style ="height: auto;">
+					</span>
+				</div>
+			</div>
+				<div class="col-md-3 col-sm-6">
+				<div class="input-group">
+					<input type="text" class="form-control border-radius border-right" placeholder="Passager"/>
+					<span class="input-group-addon border-radius custom-addon"  style ="height: auto;">
+						<i class="ion-android-contacts"></i>
+					</span>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-6">
+				<div class="btn btn-default border-radius custom-button"style="margin-left: 166%;background-color: #60c9eb;color: white;height: auto;">
+					Search
+				</div>
+			</div>
+		</div>
+		</form>
+	</section> <!-- /.tour -->
+
+
+<!-- Our Blazzing offers -->
+	<section class="offer section-wrapper">
+		<div class="container">
+			<h2 class="section-title">
+				Nos offres
+			</h2>
+			<p class="section-subtitle">
+				Lorem Ipsum is simply dummy text of the industry.
+			</p>
+			<div class="row">
+				<div class="col-sm-3 col-xs-6">
+					<div class="offer-item">
+							<i class="ion-social-euro" style="   color: #60c9eb;    font-size: 2.25rem;"></i>
+						<h3>
+							Economisation
+						</h3>
+						<p>
+							En partageant les coûts associés à l’utilisation d’une voiture et les frais de stationnement, vous pouvez réaliser des économies de 50 % ou plus.
+						</p>
+					</div>
+				</div> <!-- /.col-md-3 -->
+
+				<div class="col-sm-3 col-xs-6">
+					<div class="offer-item">
+							<i class="ion-ios-home"style="   color: #60c9eb;    font-size: 2.25rem;"></i>
+						<h3>
+							L’environnement en bénéficie
+						</h3>
+						<p>
+							Le covoiturage réduit le nombre de voitures sur nos routes et contribue donc à diminuer l’émission de gaz nocifs à effet de serre et à protéger l’environnement. 
+						</p>
+					</div>
+				</div> <!-- /.col-md-3 -->
+
+				<div class="col-sm-3 col-xs-6">
+					<div class="offer-item">
+							<i class="ion-android-bus" style="   color: #60c9eb;    font-size: 2.25rem;"></i>
+						<h3>
+							C’est plus pratique
+
+						</h3>
+						<p>
+							Le covoiturage conserve tous les aspects pratiques de la voiture, mais sans le stress.  Les membres d’un groupe de covoiturage établissent leurs propres règles en fonction de leurs besoins.
+						</p>
+					</div>
+				</div> <!-- /.col-md-3 -->
+
+				<div class="col-sm-3 col-xs-6">
+					<div class="offer-item">
+							<i class="ion-ios-locked" style="   color: #60c9eb;    font-size: 2.25rem;"></i>
+
+						<h3>
+							Le covoiturage vous donne le choix
+						</h3>
+						<p>
+							Le covoiturage peut s’avérer la solution de transport idéale pour vos déplacements quotidiens, surtout si vous habitez dans un secteur où le transport en commun n’est pas fréquent ou s’il n’existe pas. 
+
+						</p>
+					</div>
+				</div> <!-- /.col-md-3 -->
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
+	</section> <!-- /.offer -->
+
+
+<!-- Top place to visit -->
+	<section class="visit section-wrapper">
+		<div class="container">
+			<h2 class="section-title">
+				Top Déstination
+			</h2>
+			<p class="section-subtitle">
+				Les Top 6 Déstination dans notre site Yalla Bina.
+			</p>
+
+			<div class="owl-carousel visit-carousel" id="" style="height: 173px;">
+			 {% for annonce in annonces %}
+
+              <div class="card card-stats mb-4 mb-xl-0" style="width: 70%;margin-left: 10%;margin-top: 17%;height: 75px;background-color: #60c9eb;color: white;">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col" style="text-align: center;font-size: 26px;">
+                      <span>{{annonce.depart}}</span><span> → </span><span>{{annonce.arrivee}}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			  {% endfor %}
+
+		</div> <!-- /.container -->
+	</section> <!-- /.visit -->
+
+<div class="offer-cta">
+	<div class="container">
+		<div class="offering">
+			<div class="percent">
+				<span>Joignez</span> 
+			</div>
+			<div class="FTour">
+				nous <strong>gratuitement</strong>
+			</div>
+			<a class="btn btn-default price-btn" href="{{ path('security_registration') }}" style = "background-color: #60c9eb;color: white;">
+				Inscrivez vous
+			</a>
+			<a class="btn btn-default price-btn" href="{{ path('app_login') }}" style = "background-color: #60c9eb;color: white;">
+				Connexion a votre compte
+			</a>
+		</div> <!-- /.offering -->
+	</div> <!-- /.container -->
+</div> <!-- /.offer-cta -->
+
+	<section class="additional-services section-wrapper">
+		<div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-6 left" style = "margin-left: 23%;">
+                     <img src="assets/images/propose.png">
+                  </div>
+                  <div class="col-md-3" style="margin: auto;">
+                    <span style = "margin-left: -93%; margin-top: 3%; white-space: pre-line;   color: rgb(5, 71, 82);  font-size: 24px; line-height: 1.06; font-weight: 500;">Vous prenez le volant ? Dites-nous où vous allez !</span>
+					<p style = "margin-left: -93%;"> Ensemble, permettons à des millions de personnes de se déplacer.</p>
+					<a class="btn btn-primary" href = "{{ path('traget') }}" style = "margin-left: -93%;   background-color: rgb(0, 175, 245);" >Proposer un traget</a>
+                  </div>
+               </div>
+               </div> <!-- /.container -->
+	</section> <!-- /.Additional-services -->
+
+
+	<div class="section-wrapper sponsor">
+		<div class="container">
+			<div class="owl-carousel sponsor-carousel">
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-1.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-2.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-3.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-4.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-5.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-6.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-1.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-2.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-3.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-4.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-5.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-6.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-1.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-2.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-3.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-4.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-5.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/sp-6.png" alt="sponsor-brand" class="img-responsive sponsor-item">
+					</a>
+				</div>
+			</div> <!-- /.owl-carousel -->
+		</div> <!-- /.container -->
+	</div> <!-- /.sponsor -->
+
+	
+
+{% endblock %}

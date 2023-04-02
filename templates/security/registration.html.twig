@@ -1,0 +1,78 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Register{% endblock %}
+
+{% block body %}
+<main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+    <div class="container">
+      <div class="card login-card" style = "  margin-top: 62px;">
+        <div class="row no-gutters">
+          <div class="col-md-5">
+            <img src="assets/images/inscription.jpg" alt="login"  style = "border-radius: 0;
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    -o-object-fit: cover;
+       object-fit: cover;">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <div class="brand-wrapper">
+               <br><a class="brand-logo" href="{{ path('accueil') }}" title="HOME"><i class="ion-paper-airplane"></i> Yalla <span>Bina</span></a>
+              </div>
+			  <p class="login-card-description">Register into your account</p>
+<!--<div class="container-fluid">
+<div class="row" style="background-color: #DFFFEC">
+ <div class="col-12 col-md-7" id="d" style="color: #58D68D; margin-left: 8%">-->
+  	{{ form_start(registrationForm) }}
+  	  	<!--<div>
+  		<h1 style="text-align: center;padding: 6%;margin-right: 53%;color:#58D68D; ">Inscription</h1>	
+    	</div>-->
+
+      <div>
+  		  	{{ form_widget(registrationForm.nom, {'id' : 'ema', 'label':false,'attr': {'class': 'form-control', 'placeholder': 'Nom' , 'style' : 'width: 125%;
+padding: 5px;' }}) }}
+  		    {{ form_widget(registrationForm.prenom, {'id' : 'ema','label':false,'attr': {'class': 'form-control', 'placeholder': 'Prénom' , 'style' : 'width: 125%;
+padding: 5px;'}}) }}
+  	</div>
+    <div>
+  		  	{{ form_row(registrationForm.adress, {'id' : 'insc','label':false,'attr': {'class': 'form-control', 'placeholder': 'Adress' , 'style' : 'width: 125%;
+padding: 5px;' }}) }}
+  	</div>
+  	<div>
+  		  {{ form_row(registrationForm.email, {'id' : 'insc','label':false,'attr': {'class': 'form-control', 'placeholder': 'Email' , 'style' : 'width: 125%;
+padding: 5px;' }}) }}
+  	</div>
+	  <div>
+  		  {{ form_row(registrationForm.telephone, {'id' : 'insc','label':false,'attr': {'class': 'form-control', 'placeholder': 'Télèphone' , 'style' : 'width: 125%;
+padding: 5px;' }}) }}
+  	</div>
+  	<div>
+  		  {{ form_row(registrationForm.username, {'id' : 'ema','label':false,'attr': {'class': 'form-control', 'placeholder': 'Username' , 'style' : 'width: 125%;
+padding: 5px;'}}) }}
+  	</div>
+  	<div>
+  		  	 {{ form_row(registrationForm.plainPassword.first, {'id' : 'insc','label':false,'attr': {'class': 'form-control', 'placeholder': 'Mot de passe' , 'style' : 'width: 125%;
+padding: 5px;' }}) }}
+  	</div>
+  	<div>
+  		  {{ form_row(registrationForm.plainPassword.second, {'id' : 'insc','label':false,'attr': {'class': 'form-control', 'placeholder': 'Confirmation de mot de passe' , 'style' : 'width: 125%;
+padding: 5px;' }}) }}<br>
+  	</div>
+    
+    <div>
+    
+	<button class="btn btn-block login-btn mb-4" type="submit" id="btncnx" style="background-color: #60c9eb;color: white;">
+    Register in
+	</button>
+	<p class="login-card-footer-text">Already have an account?<a href="{{ path('app_login') }}"class="text-reset"> Login here</a></p>
+    </div> 
+    </div>
+{{ form_end(registrationForm) }}
+ <!--<div class="col-6 col-md-4" id="cnx">
+  	<img src="assets/img/clipart3403372.png" class="imginsc">
+ </div>-->
+</div>
+</div>
+</main>
+{% endblock %}

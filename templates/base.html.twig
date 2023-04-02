@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+           <meta charset="UTF-8">
+           <meta http-equiv="X-UA-Compatible" content="IE=edge">
+           <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {# Run `composer require symfony/webpack-encore-bundle`
+           and uncomment the following Encore helpers to start using Symfony UX #}
+        {% block stylesheets %}
+                 <link type="image/png" rel="stylesheet" href="assets/img/accueil.css">
+                <link type="text/css" rel="stylesheet" href="assets/Css/accueil.css">
+                 <link type="text/css" rel="stylesheet" href="assets/Css/login.css">
+                <link  rel="stylesheet" href="assets/Css/about.css">
+                <link rel="stylesheet" href="assets/Css/ajoutertrajet.css"/>
+
+                <link type="text/css" rel="stylesheet" href="{{'assets/Css/contact.css'}}">>
+                <link  rel="stylesheet" href="assets/Css/ionicons.css">
+                <link  rel="stylesheet" href="assets/Css/section.css">
+                <link  rel="stylesheet" href="assets/Css/services.css">
+                <link rel="stylesheet" href="assets/Css/bootstrap.min.css">
+                <link rel="stylesheet" href="assets/Css/ionicons.min.css">
+                <link rel="stylesheet" href="assets/Css/owl.carousel.css">
+                <link rel="stylesheet" href="assets/Css/owl.theme.css">
+                <link rel="stylesheet" href="assets/Css/profil.css">
+                <link type="text/css" rel="stylesheet" href="assets/Css/flexslider.css" >
+                <link type="text/css" rel="stylesheet" href="assets/Css/lora-font.css">
+                <link type="text/css" rel="stylesheet" href="assets/Css/style.css">
+                <link type="text/css" rel="stylesheet" href="assets/Css/main.css">
+                <link type="text/css" rel="stylesheet" href="assets/Css/search.css">
+                <link type="text/css" rel="stylesheet" href="assets/Css/Annonce.css">
+                <link type="text/css" rel="stylesheet" href="assets/Css/anonces.css">
+
+
+
+                <link type="text/css" rel="stylesheet" href="assets/Css/raleway-font.css">
+                <link type="text/css" rel="stylesheet" href="assets/Css/jquery-ui.min.css">
+
+                <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+                <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        {% endblock %}
+
+        {% block javascripts %}
+                <script type="text/javascript" src="{{'assets/js/accueil.js'}}"></script>
+                <script type="text/javascript" src="{{'assets/js/contact.js'}}"></script>
+                <script type="text/javascript" src="{{'assets/js/smoothscroll.js'}}"></script>
+
+                	<script src="assets/js/jquery-1.11.2.min.js"></script>
+                    <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+                    <script src="assets/js/bootstrap.min.js"></script>
+                    <script src="assets/js/owl.carousel.min.js"></script>
+                    <script src="assets/js/contact.js"></script>
+                    <script src="assets/js/jquery.flexslider.js"></script>
+                    <script src="assets/js/script.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+                
+
+        {% endblock %}
+    </head>
+    <body>
+    {{ include('admin/includes/header.html.twig') }}
+        {% block body %}
+        {% endblock %}
+    {{ include('admin/includes/footer.html.twig') }}
+    </body>
+</html>

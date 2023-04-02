@@ -1,0 +1,57 @@
+
+<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="brand-logo" href="{{ path('accueil') }}" title="HOME"><i class="ion-paper-airplane"></i> Yalla <span>Bina</span></a>
+			</div> <!-- /.navbar-header -->
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+				{% if app.user %}
+					<li class="active"><a href="{{ path('accueil') }}">Home</a></li>
+					<li><a href="{{ path('search') }}">Rechercher</a></li>
+					<li><a href="{{ path('traget') }}">Proposer un trajet</a></li>
+					<li><a href="{{ path('contact') }}">contact</a></li>
+					<li><a href="#" data-toggle="dropdown">
+					<li></li>
+					<img src="/assets/img/profile-user.png" class="avatar" alt="Avatar"><b class="caret"></b> </a></li>
+						<ul class="dropdown-menu" style ="right: 121px;">
+					<li><a href="{{ path('profil') }}"> Profil</a></li>
+					<li><a href="{{ path('mesanonces') }}"> Vos trajet</a></li>
+					<li><a href="{{ path('anonces') }}"> Les annonces</a></li>
+					<li><a href="{{ path('reservation') }}"> Mes Réservation</a></li>
+					<li class="divider"></li>
+					<li><a href="{{ path('app_logout') }}"> Logout</a></li>
+				{% else %}
+
+					<li class="active"><a href="{{ path('accueil') }}">Home</a></li>
+					<li><a href="{{ path('app_login') }}">Rechercher</a></li>
+					<li><a href="{{ path('app_login') }}">Proposer un trajet</a></li>
+					<li><a href="{{ path('contact') }}">contact</a></li>
+					<li><a href="#" data-toggle="dropdown">
+					<li></li>
+					<img src="/assets/img/profile-user.png" class="avatar" alt="Avatar"><b class="caret"></b>  </a></li>
+						<ul class="dropdown-menu" style ="right: 121px;">
+					<li><a href="{{ path('app_login') }}"> Connexion </a></li>
+					<li><a href="{{ path('security_registration') }}"> Inscription</a></li>
+						{% endif %}
+				</ul>
+				</ul> <!-- /.nav -->
+		    </div><!-- /.navbar-collapse -->
+	  	</div><!-- /.container -->
+	</nav>
+	<style>
+	.navbar .dropdown-menu li a {
+	color: #60c9eb !important;
+	padding: 8px 20px;
+	line-height: normal;
+}
+	</style>

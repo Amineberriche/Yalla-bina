@@ -1,0 +1,208 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello TragetController!{% endblock %}
+
+
+
+{% block body %}
+<section class="section-background"  style="background-image: url('assets/images/roadd.jpg')">
+		<div class="container">
+			<h2 class="page-header">
+				get in touch with us
+			</h2>
+			<ol class="breadcrumb" style = " padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 4px;">
+				<li><a href="{{ path('accueil') }}">Home</a></li>
+				<li class="active">&nbsp;Proposer un trajet</li>
+			</ol>
+		</div> <!-- /.container -->
+	</section> <!-- /.section-background -->
+<body class="form-v3">
+<div class="page-content">
+		<div class="form-v3-content"  style="margin-top: 69px;">
+			<form class="form-detail" action="#" method="post" id="myform">
+			{{ form_start(form) }}
+				<p><h2>Proposer un trajet</h2></p>
+				
+				<div class="form-group">
+					<div class="form-row form-row-1">
+						<label for="full-name">Lieu de départ :</label>
+  		  			{{ form_widget(form.depart,{'id' : 'lieu_dep' , 'name' : 'lieu_dep' ,'label':false ,'attr': {'class': 'input-text' }}) }}
+					</div>
+					<div class="form-row form-row-1">
+						<label for="lieu_arr">lieu d'arrivée :</label>
+					{{ form_widget(form.arrivee, {'id' : 'lieu_arr', 'name' : 'lieu_arr' ,'label':false,'attr': {'class': 'input-text' }}) }}
+					</div>
+				</div>
+				
+				<div class="form-group form-group-1">
+					<div class="form-row form-row-2">
+						<label for="passager">Passager :</label>
+						{{ form_widget(form.passager, {'id' : 'passager', 'name' : 'passager' ,'label':false, 'value' : '1' , 'size' : '4' ,  'min' : '1'  ,'attr': {'class': 'input-text' }}) }}
+					</div>
+					<div class="form-row form-row-3">
+						<label for="date">Date de sortie :</label>
+						{{ form_widget(form.date_depart, {'id' : 'date', 'name' : 'date' ,'label':false,'attr': {'class': 'date' }}) }}
+					</div>
+					<div class="form-row form-row-2">
+						<label for="ticket">Prix de trajet :</label>
+						{{ form_widget(form.prix, {'id' : 'prix', 'name' : 'prix' ,'label':false,'attr': {'class': 'input-text' }}) }}
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="form-row form-row-1">
+						<label for="heure_de_depart">L'heure de départ :</label>
+						 {{ form_widget(form.heure_depart, {'id' : 'heure_de_depart', 'name' : 'heure_de_depart' ,'label':false,'attr': {'class': 'input-text' }}) }}
+					</div>
+					<div class="form-row form-row-1">
+						<label for="heur_d_arrivee">L'heure d'arrivée:</label>
+						{{ form_widget(form.heure_arrivee, {'id' : 'heur_d_arrivee', 'name' : 'heur_d_arrivee' ,'label':false,'attr': {'class': 'input-text' }}) }}
+					</div>
+				</div>
+
+				<div class="form-checkbox">
+					<label class="container"><p> <a href="#" class="text"></a></p>
+					  	
+					  	<span class=""></span>
+					</label>
+				</div>
+				<div class="form-row-last">
+					<input type="submit" name="register" class="register" value="Ajouter">
+				</div>
+				{{ form_end(form) }}
+			</form>
+			<div class="form-right">
+				<div class="form-images-1">
+					<img src="assets/images/Car.jpg" alt="form-v3-1" class="img">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    var availableTags = [
+    "Oujda",
+        "Fes",
+        "Rabat",
+        "Casablanca",
+        "Ouarzazat",
+        "Agadir",
+        "Marrekch",
+        "Meknes",
+        "Medieq",
+        "Saidia",
+        "Ahfir",
+        "Cap de l'eau",
+        "Bab Berred",
+        "Bab Taza",
+        "Ben Ahmed",
+        "Beni Chiker",
+        "Beni Ansar",
+        "Beni Mellal",
+        "Ben Slimane",
+        "Ben Taieb",
+        "Ben Yakhlef",
+        "Berkane",
+        "Berrechid",
+        "Bhalil",
+        "Bir GanBirdus",
+        "Bir Lehlou",
+        "Bni Bouayach",
+        "Bni Drar",
+        "Bni Hadifa",
+        "Beni Tadjit",
+        "Bouarfa",
+        "Bou Craa",
+        "Bouanane",
+        "Boudnib",
+        "Boufakrane",
+        "Bouguedra",
+        "Bouizakarne",
+        "Boujad",
+        "Boujdour (Cabo Bojador)",
+        "Bouknadel",
+        "Boulemane",
+        "Boumalne Dadès",
+        "Boumia",
+        "Bouskoura",
+        "Bouznika",
+        "Bradia",
+        "Brikcha",
+        "Chefchaouen",
+        "Chemaia",
+        "Chichaoua"
+    ];
+    $( "#lieu_dep" ).autocomplete({
+      source: availableTags
+    });
+  } );
+  </script>
+  <script>
+  $( function() {
+    var availableTags = [
+    "Oujda",
+        "Fes",
+        "Rabat",
+        "Casablanca",
+        "Ouarzazat",
+        "Agadir",
+        "Marrekch",
+        "Meknes",
+        "Medieq",
+        "Saidia",
+        "Ahfir",
+        "Cap de l'eau",
+        "Bab Berred",
+        "Bab Taza",
+        "Ben Ahmed",
+        "Beni Chiker",
+        "Beni Ansar",
+        "Beni Mellal",
+        "Ben Slimane",
+        "Ben Taieb",
+        "Ben Yakhlef",
+        "Berkane",
+        "Berrechid",
+        "Bhalil",
+        "Bir GanBirdus",
+        "Bir Lehlou",
+        "Bni Bouayach",
+        "Bni Drar",
+        "Bni Hadifa",
+        "Beni Tadjit",
+        "Bouarfa",
+        "Bou Craa",
+        "Bouanane",
+        "Boudnib",
+        "Boufakrane",
+        "Bouguedra",
+        "Bouizakarne",
+        "Boujad",
+        "Boujdour (Cabo Bojador)",
+        "Bouknadel",
+        "Boulemane",
+        "Boumalne Dadès",
+        "Boumia",
+        "Bouskoura",
+        "Bouznika",
+        "Bradia",
+        "Brikcha",
+        "Chefchaouen",
+        "Chemaia",
+        "Chichaoua"
+    ];
+    $( "#lieu_arr" ).autocomplete({
+      source: availableTags
+    });
+  } );
+  </script>
+{% endblock %}
+
+
+

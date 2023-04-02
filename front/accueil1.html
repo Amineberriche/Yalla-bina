@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="accueil.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beautiful Bootstrap Navbar with Menu Icons</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head> 
+<body>
+<nav class="navbar navbar-inverse navbar-expand-xl navbar-dark">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="#"><i class="fa fa-cube"></i>Yalla-<b>Bina</b></a>  		
+		<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+			<span class="navbar-toggler-icon"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+	</div>
+	<!-- Collection of nav links, forms, and other content for toggling -->
+	<div id="navbarCollapse" class="collapse navbar-collapse">		
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="#"><i class="fa fa-search" style="color: #58D68D"></i><span style="color: #58D68D">Rechercher</span></a></li>		
+			<li><a href="#"><i class="fa fa-plus" style="color: #58D68D"></i><span style="color: #58D68D">Proposer un traget</span></a></li>
+			<li class="dropdown">
+				<a href="#" data-toggle="dropdown" class="dropdown-toggle user-action"><img src="ic_account_circle_24px.png" class="avatar" alt="Avatar"> <b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li><a href="inscription.html"><i class="fa fa-user-plus"></i> Inscription</a></li>
+					<li><a href="connexion.html"><i class="fa fa-user-o"></i> Connexion</a></li>
+					<li class="divider"></li>
+					<li><a href="#"><i class="material-icons">&#xE8AC;</i> Logout</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</nav>
+<div class="container-fluid">
+<div class="row" style="background-color: #DFFFEC">
+  <div class="col-12 col-md-8" id="d" style="color: #58D68D">
+  	<h2 style="margin-left: 10%;">Voyagez</h2>
+  	<h3 style="margin-left: 10%;">avec des nouveaux amis et bon prix.</h3>
+  	<img src="Image d'accueil 1.png" class="img1" style="margin-left: 10%;">
+  </div>
+  <div class="col-6 col-md-4" id="c">
+  	<div>
+  		  	<input type="text" placeholder="&#xf062;  Lieu de Départ" name="" class="placeicon" id="a" >
+  	</div>
+  	<div>
+  		  	<input type="text" placeholder="&#xf124;  Lieu de Déstination" name="" class="placeicon"  id="aa"  >
+  	</div>
+  	<div>
+  		  	<input type="Date" name="" style="color: #58D68D;" id="b">
+  		  	<input type="text" placeholder="&#xf2bc;  Passager" name="" class="placeicon" id="b">
+  	</div>
+  	<input type="submit" name="" value="Recherche" id="bt" style="background-color: #58D68D;color: white;">
+  </div>
+</div>
+</div>
+<div>
+	<div class="container-fluid" style="padding: 3%;">
+		<div class="row">
+  		<div class="col-12 col-md-4" style="color: #58D68D;padding:3%" id="t">
+  			<h2>Vous prenez le Volant ?</h2>
+  			<h5 id="h">vous pouvez partager votre traget.</h5>
+  			<input type="submit" name="" value="Proposer un traget" id="bt1" style="background-color: #DFFFEC;color: #58D68D;">
+  	</div>
+  		<div class="col-6 col-md-4" >
+  			<img src="image.jpg" class="img2" >
+  		</div>
+  	</div>
+	</div>
+</div>
+<div style="background-color: #DFFFEC; padding: 2%; color:#58D68D ">
+	<p style="font-size: 40px;font-family: regular;">c'est quoi le covoiturage ?</p>
+	<p style="font-size: 20px;font-family: regular;">Le covoiturage, c’est l’expérience de partager un trajet ensemble. Au fond, chaque fois que vous visitez une autre ville en voiture avec des amis,<br> c’est du covoiturage. Avec Yalla-Bina, on va un peu plus loin, en mettant en relation des conducteurs qui ont des places libres avec des personnes <br>qui voyagent vers la même destination.<br>
+
+	Il s’agit surtout de trajets longue-distance allant d’une ville à une autre. En Belgique, la distance moyenne parcourue par trajet est de 205km!</p>
+</div>
+<div style="text-align: center;color:#58D68D;">
+	<h2>Les top des destinations</h2>
+</div>
+<div  style="background-color: #DFFFEC; padding: 7%; color:#58D68D ">
+</div>
+<div class="container-fluid">
+<div class="row">
+	<div class="col-12 col-md-6">
+		<img src="eric-terrade-WLT1h7G-Yvk-unsplash.jpg" class="img3">
+	</div>
+	<div class="col-6 col-md-6" style="color:#58D68D; margin-top: 5%;">
+		<h1 style="margin-left: 16%">Historique du covoiturage</h1><br>
+		<p style="font-size: 24px;font-family: regular;"> Le concept du covoiturage est né d’un constat simple : plus il y a de passagers, moins le trajet est cher. En optant pour le covoiturage on partage les frais d’un trajet en voiture en optimisant ainsi le remplissage de son véhicule. Il est intéressant de voir que le carpooling n’a pas attendu l’avénement d’internet pour se développer. En effet, dès le début des années 50, des associations allemandes profitaient déjà du concept de l’auto-stop pour lancer la dynamique.
+</p>
+	</div>
+	</div>
+</div>
+ <footer>
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <h4> Yalla-Bina </h4>
+                </div>
+                <div class="col-lg-3 col-sm-2 col-xs-3">
+                    <h3> Contact </h3>
+                    <ul>
+                        <li><a class="email"href="#"> insert email here </a></li>
+                        <br/>
+                        <li> <p> address line one </p> </li>
+                        <li> <p> address line two </p> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-2 col-xs-3">
+                    <ul>
+                        <li> <h5> <a href="#" style="margin-top: 5em"> ABOUT US</a> <h5></li>
+                        <li> <h5><a href="#"> CURRENT SERIES </a> <h5></li>
+                        <li> <h5><a href="#"> THE HOUSE </a> <h5></li>
+                        <li> <h5><a href="#"> LOOKING BACK </a> <h5></li>
+                    </ul>
+                </div>
+               
+            <!--/.row--> 
+        </div>
+        <!--/.container--> 
+    </div>
+    <!--/.footer-->
+                          
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="pull-left copyright"> Copyright © Footer 2014. All right reserved. </p>
+       
+        </div>
+    </div>
+    <!--/.footer-bottom--> 
+
+</footer>
+</body>
+</html>                            
